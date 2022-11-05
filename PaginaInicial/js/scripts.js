@@ -77,8 +77,8 @@ document.getElementById('sair').addEventListener('click', () => {
     VOCÊ POSSUI EVENTOS NÃO RESPONDIDOS! 
 
     DESEJA REALMENTE SAIR?`)
-    console.log(result)
-    if(result){
-        window.location.href = 'https://jpfariaa.github.io/hack-faesa/login/index.html' 
-    }
+    
+    // if(result){
+    //     window.location.href = 'https://jpfariaa.github.io/hack-faesa/login/index.html' 
+    // }
 })
