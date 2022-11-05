@@ -4,6 +4,7 @@
 .link-semresposta {
   color: red;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .link-respondido {

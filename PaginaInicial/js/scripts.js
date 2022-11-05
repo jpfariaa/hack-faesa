@@ -45,14 +45,40 @@ document.getElementById('link').addEventListener('click', () => {
     } 
 })
 
+document.getElementById('link2').addEventListener('click', () => {
+    const Justificativa = prompt(`  
+    1 - Banheiro
+    2 - Água
+    3 - Lanche
+                                    `)
+    if(Justificativa){
+        document.getElementById('link2').classList.add('link-respondido')
+        document.getElementById('link2').innerHTML = 'CHECK RESPONDIDO'
+    } 
+})
+
 async function notificar() {
     var notification = new Notification('ATENÇÃO!', {
         body: 'Notificação teste',
         icon: 'https://img.icons8.com/color/48/000000/developer.png'
     })
+    notification.onclick = () => {
+        window.open('../PaginaInicial/paginaInicial.html')
+    }
 }
 
 document.getElementById('demonstracao').addEventListener('click', async () => {
     await notificar()
     confirm('teste')
+})
+
+document.getElementById('sair').addEventListener('click', () => {
+    const result = confirm(`
+    VOCÊ POSSUI EVENTOS NÃO RESPONDIDOS! 
+
+    DESEJA REALMENTE SAIR?`)
+    console.log(result)
+    if(result){
+        window.location.href = '../../login/index.html' 
+    }
 })
