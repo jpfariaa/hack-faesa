@@ -45,10 +45,14 @@ document.getElementById('link').addEventListener('click', () => {
     } 
 })
 
-document.getElementById('demonstracao').addEventListener('click', () => {
+async function notificar() {
     var notification = new Notification('ATENÇÃO!', {
         body: 'Notificação teste',
         icon: 'https://img.icons8.com/color/48/000000/developer.png'
     })
+}
+
+document.getElementById('demonstracao').addEventListener('click', async () => {
+    await notificar()
     confirm('teste')
 })
