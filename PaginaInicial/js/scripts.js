@@ -32,3 +32,11 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.getElementById('link').addEventListener('click', () => {
+    const Justificativa = prompt(`Justificativa:`)
+    if(Justificativa){
+        document.getElementById('link').classList.add('link-respondido')
+        document.getElementById('link').innerHTML = 'CHECK RESPONDIDO'
+    } 
+})
