@@ -79,6 +79,6 @@ document.getElementById('sair').addEventListener('click', () => {
     DESEJA REALMENTE SAIR?`)
     console.log(result)
     if(result){
-        window.location.href = '../../login/index.html' 
+        window.location.href = 'https://jpfariaa.github.io/hack-faesa/login/index.html' 
     }
 })
