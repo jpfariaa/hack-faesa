@@ -51,6 +51,9 @@
                 <div class="form-comtrol" style="position: absolute; top: 50px;">
                     <button type="button" class="btn btn-secondary">REGISTRAR EVENTO</button>
                 </div>
+                <div>
+                    <button onclick="notificar()" type="button" class="btn btn-secondary">NOTIFICAÇÃO</button>
+                </div>
 
                 <table class="table">
                     <thead>
@@ -250,6 +253,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function notificar() {
+            var notification = new Notification('ATENÇÃO!', {
+                body: 'Notificação teste',
+                icon: 'https://img.icons8.com/color/48/000000/developer.png'
+            });
+        }
     </script>
 </body>
 
