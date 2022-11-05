@@ -78,7 +78,7 @@ document.getElementById('sair').addEventListener('click', () => {
 
     DESEJA REALMENTE SAIR?`)
     
-    // if(result){
-    //     window.location.href = 'https://jpfariaa.github.io/hack-faesa/login/index.html' 
-    // }
+    if(result){
+        window.location.href = 'https://jpfariaa.github.io/hack-faesa/login/index.html' 
+    }
 })
